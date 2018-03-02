@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Chart from './Chart'
-import GoogleMap from './GoogleMap' 
+import MyComponent from './GoogleMap'
+ 
 
 class CityList extends Component {
 
@@ -14,7 +15,7 @@ class CityList extends Component {
 
 		return (
 			<tr key={cityData.city.name}>
-				<td>{cityData.city.name}</td>
+				<td><MyComponent className='google-map' isMarkerShown lat={lat} lon={lon}/></td>
 				<td>
 					<Chart data={temp} color='red' unit='°C'/>					
 				</td>
@@ -33,7 +34,7 @@ class CityList extends Component {
 			<table className='table table-hover'>
 				<thead>
 					<tr>
-						<th>City</th>
+						<th className='city'>City</th>
 						<th>Temperature (K)</th>
 						<th>Pressure (hPa)</th>
 						<th>Humidity (%)</th>

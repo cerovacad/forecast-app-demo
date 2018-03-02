@@ -10,6 +10,7 @@
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.1",
     "react-sparklines": "^1.7.0",
+    "recompose": "^0.26.0",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3"
   },

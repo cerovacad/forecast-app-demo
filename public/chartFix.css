@@ -1,9 +1,20 @@
 .chart {
 	width: 12em;
 	text-align: center;
+	padding-top: 1em;
+}
+td {
+	margin-bottom: 0 !important;
 }
 
-td:first-of-type, td:first-of-type > div {
-	height: 200px;
-	width: 250px;
+tr {
+	margin-bottom: 0 !important;
+}
+
+.city {
+	width: 25%;
+}
+
+.google-map {
+	width: 100px;
 }
